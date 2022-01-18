@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+<title>Pohon Merentang Minimum | Buku Belajar</title>
+<meta name="url" content="https://bukubelajar.github.io/pohon-merentang-minimum/" />
+<meta property="og:url" content="https://bukubelajar.github.io/pohon-merentang-minimum/">
+<meta property="article:author" content="Budi"> 
+<meta name="author" content="Budi">
+<link rel="canonical" href="https://bukubelajar.github.io/pohon-merentang-minimum/">
+<link rel="preconnect" href="https://stackpath.bootstrapcdn.com">
+<link rel="dns-prefetch" href="https://stackpath.bootstrapcdn.com">
+<link rel="preconnect" href="https://code.jquery.com">
+<link rel="dns-prefetch" href="https://code.jquery.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://bukubelajar.github.io/assets/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Lora:400,400i,700">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
+<link rel="stylesheet" href="https://bukubelajar.github.io/assets/css/main.css">
+<link rel="stylesheet" href="https://bukubelajar.github.io/assets/css/theme.css">
+<link rel="icon" type="image/png" href="/logo.png">
+<link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/favicon.ico">
+<link rel="shortcut icon" href="/favicon.ico">
+    
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "articleSection": "post",
+    "name": "Pohon Merentang Minimum",
+    "headline": "Pohon Merentang Minimum",
+    "alternativeHeadline": "",
+    "description": "Pohon Merentang Minimum. Diantara pohon merentang yang ada padag, yang paling penting adalah pohon merentang dengan bobot minimum. Salah satu algoritma yang dipakai dalam membangun pohon merentang minimum adalah algoritma prim yang merupakan algoritma dengan menggunakan strategi greedy sehingga membentuk solusi pada tiap langkahnya.",
+    "inLanguage": "en-us",
+    "isFamilyFriendly": "true",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https:\/\/bukubelajar.github.io\/pohon-merentang-minimum\/"
+    },
+    "author" : {
+        "@type": "Person",
+        "name": "Budi"
+    },
+    "creator" : {
+        "@type": "Person",
+        "name": "Budi"
+    },
+    "accountablePerson" : {
+        "@type": "Person",
+        "name": "Budi"
+    },
+    "copyrightHolder" : "Buku Belajar",
+    "copyrightYear" : "2021",
+    "dateCreated": "2021-07-13T19:40:35.00Z",
+    "datePublished": "2021-07-13T19:40:35.00Z",
+    "dateModified": "2022-01-18T00:00:00.00Z",
+    "publisher":{
+        "@type":"Organization",
+        "name": "Buku Belajar",
+        "url": "https://bukubelajar.github.io",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https:\/\/bukubelajar.github.io\/logo.png",
+            "width":"32",
+            "height":"32"
+        }
+    },
+    "image": "https://bukubelajar.github.io/logo.png",
+    "url" : "https:\/\/bukubelajar.github.io\/pohon-merentang-minimum\/",
+    "wordCount" : "1882",
+    "genre" : [ "sekolah" ],
+    "keywords" : [ "Pohon" , "merentang" , "minimum" ]
+}
+</script>
+
+</head>
+  <body>    
+    <nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="https://bukubelajar.github.io"><span style="text-transform: capitalize;font-weight: bold;">Buku Belajar</strong></a><button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="navbar-collapse collapse" id="navbarColor02" style="">
+            <ul class="navbar-nav mr-auto d-flex align-items-center">
+               
+               <li class="nav-item"><a class="nav-link" href="https://bukubelajar.github.io/contact/">Contact</a></li>
+               <li class="nav-item"><a class="nav-link" href="https://bukubelajar.github.io/dmca/">Dmca</a></li>
+               <li class="nav-item"><a class="nav-link" href="https://bukubelajar.github.io/privacy-policy/">Privacy Policy</a></li>
+               <li class="nav-item"><a class="nav-link" href="https://bukubelajar.github.io/about/">About</a></li><li class="nav-item"><a class="nav-link" style="text-transform: capitalize;" href="https://bukubelajar.github.io/categories/belajar/" title="Belajar">Belajar</a></li><li class="nav-item"><a class="nav-link" style="text-transform: capitalize;" href="https://bukubelajar.github.io/categories/pengetahuan/" title="Pengetahuan">Pengetahuan</a></li><li class="nav-item"><a class="nav-link" style="text-transform: capitalize;" href="https://bukubelajar.github.io/categories/sekolah/" title="Sekolah">Sekolah</a></li></ul>
+        </div>
+    </div>
+    </nav>
+    <main role="main" class="site-content">
+<div class="container">
+<div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
+        <div class="h-100 tofront">
+            <div class="row justify-content-between ">
+                <div class=" col-md-6 pr-0 pr-md-4 pt-4 pb-4 align-self-center">
+                    <p class="text-uppercase font-weight-bold"><span class="catlist"><a class="sscroll text-danger" href="https://bukubelajar.github.io/categories/sekolah"/>Sekolah</a> . </span></p>
+                    <h1 class="display-4 mb-4 article-headline">Pohon Merentang Minimum</h1>
+                    <div class="d-flex align-items-center">
+                        <small class="ml-3">Written by Budi <span class="text-muted d-block mt-1">Jul 13, 2021 · <span class="reading-time">9 min read</span></span></small>
+                    </div>
+                </div>
+                <div class="col-md-6 pr-0 align-self-center">
+                    <img class="rounded" src="https://image.slidesharecdn.com/grafpohonbagianke6-131005095330-phpapp01/95/graf-pohon-bagian-ke-6-49-638.jpg?cb=1380966898" onerror="this.onerror=null;this.src='https:\/\/bukubelajar.github.io\/img\/placeholder.svg';" alt="Pohon Merentang Minimum"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-lg pt-4 pb-4">
+    <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-8">
+            <article class="article-post">
+            <p></p><script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+<p><strong>Pohon Merentang Minimum</strong>. Diantara pohon merentang yang ada padag, yang paling penting adalah pohon merentang dengan bobot minimum. Salah satu algoritma yang dipakai dalam membangun pohon merentang minimum adalah algoritma prim yang merupakan algoritma dengan menggunakan strategi greedy sehingga membentuk solusi pada tiap langkahnya. Ambil sisi graf g yang berbobot minimum, masukkan ke dalam t. Misalkan pemerintah akan membangun jalur rel kereta api yang menghubungkan sejumlah kota seperti yang digambarkan pada graf gambar 7.3.</p>
+<p><img loading="lazy" width="100%" src="https://bukubelajar.github.io/img/placeholder.svg" data-src="https://image.slidesharecdn.com/grafpohonbagianke6-131005095330-phpapp01/95/graf-pohon-bagian-ke-6-49-638.jpg?cb=1380966898" alt="Contoh Soal Dan Jawaban Pohon Merentang Minimum" title="Contoh Soal Dan Jawaban Pohon Merentang Minimum" onerror="this.onerror=null;this.src='https:\/\/bukubelajar.github.io\/img\/placeholder.svg';" class="center" />
+Contoh Soal Dan Jawaban Pohon Merentang Minimum From ilmusosial.id</p>
+<p><span class="navi text-left"><a class="badge badge-info" href="/biaya-masuk-ponpes-darul-hikam-mojokerto-2020/">Biaya masuk ponpes darul hikam mojokerto 2020</a></span>
+<span class="navi text-left"><a class="badge badge-danger" href="/bengkel-online-surabaya/">Bengkel online surabaya</a></span>
+<span class="navi text-left"><a class="badge badge-primary" href="/baut-a325/">Baut a325</a></span>
+<span class="navi text-left"><a class="badge badge-secondary" href="/berikut-adalah-kegiatan-menetapkan-skala-produksi/">Berikut adalah kegiatan menetapkan skala produksi</a></span></p>
+<p>Pohon merentang minimum ini merupakan pohon merentang yang paling penting. Contohnya, menentukan jarak minimum jaringan listrik, menentukan biaya pembangunan jalan raya yang Pohon merentang minimum (minimum spanning tree) | algoritma kruskal. Diantara pohon merentang yang ada padag, yang paling penting adalah pohon merentang dengan bobot minimum. Adapun, pohon merentang minimum merupakan pohon merentang yang memiliki jumlah bobot tiap sisi minimum dibandingkan pohon merentang lain. Pohon merentang minimum memiliki terapan luas dalam praktek.</p>
+<h3 id="salah-satu-pembahasannya-yaitu-pohon-merentang-minimum-minimum-spanning-tree">Salah satu pembahasannya yaitu pohon merentang minimum (minimum spanning tree).</h3><p>Pohon merentang minimum (minimum spanning tree) | algoritma kruskal. Tabel pembentukan pohon merentang minimum dengan menggunakan algoritma prim bobot pohon merentang minimum yang diperoleh dengan menggunakan algoritma prim: Bobot = 10 + 25 + 15 + 20 + 35 = 105 19. Realisasi algoritma prim 10 12 9 a d b c. Dalam kehidupan nyata, salah satu contoh aplikasi spanning tree adalah menentukan rangkaian jalan dengan jarak total seminimum mungkin yang menghubungkan semua kota sehingga setiap kota tetap terhubung satu sama lain. Masukkan (u, v) ke dalam t.</p>
+<p><img loading="lazy" width="100%" src="https://bukubelajar.github.io/img/placeholder.svg" data-src="https://ohtheme.com/oh/theme/main/1493529656/dWdnY2Y6Ly9lcm5xcmUwMTIuZmduZ3ZweWJocS5hcmcvZXJucXJlMDEyL3Vnenk1LzIwMTgwOTA0LzVuNzczODIyN3M4bzluMHE1NThxcDczNy9vdDEuY2F0/contoh-soal-dan-jawaban-pohon-merentang-minimum.jpg" alt="Contoh Soal Dan Jawaban Pohon Merentang Minimum OhTheme" title="Contoh Soal Dan Jawaban Pohon Merentang Minimum OhTheme" onerror="this.onerror=null;this.src='https:\/\/bukubelajar.github.io\/img\/placeholder.svg';" class="center" />
+Source: ohtheme.com</p>
+<p>Penentuan pohon rentang minimum yang banyak digunakan untuk memecahkan masalah optimasi untuk menemukan solusi terhadap masalah yang memerlukan minmum. Bobotnya sama yaitu = 36 Salah satu algoritma yang dipakai dalam membangun pohon merentang minimum adalah algoritma prim yang merupakan algoritma dengan menggunakan strategi greedy sehingga membentuk solusi pada tiap langkahnya. Pohon merentang minimum.terdapat 2 algoritma yang sering digunakan untuk mencari pohon merentang minimum dari suatu graf terhubung dan berbobot, yaitu algoritma prim dan algoritma kruskal. Graph theory is a branch of mathematics and a main topic which has many applications at the moments.</p>
+<p><img loading="lazy" width="100%" src="https://bukubelajar.github.io/img/placeholder.svg" data-src="https://cuitandokter.com/dir/main/3687659890/dWdnY2Y6Ly9lcm5xcmUwMTYuc3FieGh6cmEucGJ6L2VybnFyZTAxNi9meXZxci8yMDE4MDgyNi81ODcwNTUxNTFuMjhub24yMTE4bzUxczMvcWJwaHpyYWctMjIuY2F0/pohon-tree-matematika-diskrit-pptx-powerpoint.jpg" alt="Matematika Diskrit Pohon Merentang Minimum Cuitan Dokter" title="Matematika Diskrit Pohon Merentang Minimum Cuitan Dokter" onerror="this.onerror=null;this.src='https:\/\/bukubelajar.github.io\/img\/placeholder.svg';" class="center" />
+Source: cuitandokter.com</p>
+<p>Pohon rentang yang berbobot minimum dinamakan pohon merentang minimum minimum spanning tree. Masalah pohon rentang minimum serupa dengan masalah rute terpendek (shortest route), kecuali bahwa tujuannya adalah untuk menghubungkan seluruh. Salah satu algoritma yang dipakai dalam membangun pohon merentang minimum adalah algoritma prim yang merupakan algoritma dengan menggunakan strategi greedy sehingga membentuk solusi pada tiap langkahnya. Persoalan air minum pdam merupakan salah satu permasalahan mendasar bagi kabupaten/kota yang sedang berkembang, salah satunya adalah kabupaten Seiring dengan berjalannya iterasi untuk setiap sisi maka forest akan memiliki pohon yang semakin sedikit.</p>
+<p><img loading="lazy" width="100%" src="https://bukubelajar.github.io/img/placeholder.svg" data-src="https://image.slidesharecdn.com/pohontreematematikadiskrit-151230082054/95/pohontree-matematika-diskrit-8-638.jpg?cb=1451463712" alt="Contoh Soal Dan Jawaban Pohon Merentang Minimum" title="Contoh Soal Dan Jawaban Pohon Merentang Minimum" onerror="this.onerror=null;this.src='https:\/\/bukubelajar.github.io\/img\/placeholder.svg';" class="center" />
+Source: ilmusosial.id</p>
+<p>Pilih sisi (u,v) yang mempunyai bobot minimum dan bersisian dengan simpul t, tetapi (u, v) tidak membentuk sirkuit di t. However, we are currently experimenting with a mobile (lite) version of visualgo to be ready by april 2022. Dear all.di video ini akan dijelaskan tentang cara menentukan minimum spanning tree dengan algoritma prim.keep watching and see you on the next videos Graph theory is a branch of mathematics and a main topic which has many applications at the moments. Other thesis, university of muhammadiyah malang.</p>
+<p><img loading="lazy" width="100%" src="https://bukubelajar.github.io/img/placeholder.svg" data-src="https://image2.slideserve.com/4179157/tabel-pembentukan-pohon-merentang-minimum-dengan-menggunakan-algoritma-kruskal-l.jpg" alt="PPT POHON (TREE) PowerPoint Presentation, free download" title="PPT POHON (TREE) PowerPoint Presentation, free download" onerror="this.onerror=null;this.src='https:\/\/bukubelajar.github.io\/img\/placeholder.svg';" class="center" />
+Source: slideserve.com</p>
+<p>Dear all.di video ini akan dijelaskan tentang cara menentukan minimum spanning tree dengan algoritma prim.keep watching and see you on the next videos Ambil sisi dari graf g yang berbobot minimum, masukkan ke dalam t Dear all.di video ini akan dijelaskan tentang cara menentukan minimum spanning tree dengan algoritma prim.keep watching and see you on the next videos Pohon merentang minimum.terdapat 2 algoritma yang sering digunakan untuk mencari pohon merentang minimum dari suatu graf terhubung dan berbobot, yaitu algoritma prim dan algoritma kruskal. Pilih sisi yang mempunyai bobot minimum yang tidak membentuk sirkuit di pohon.</p>
+<p><img loading="lazy" width="100%" src="https://bukubelajar.github.io/img/placeholder.svg" data-src="https://reader016.fdokumen.com/reader016/slide/20180826/587055151a28aba2118b51f3/document-50.png?t=1595131735" alt="Pohon(tree) matematika diskrit [PPTX Powerpoint]" title="Pohon(tree) matematika diskrit [PPTX Powerpoint]" onerror="this.onerror=null;this.src='https:\/\/bukubelajar.github.io\/img\/placeholder.svg';" class="center" />
+Source: fdokumen.com</p>
+<p>Pohon merentang minimum memiliki terapan luas dalam praktek. Diantara semua pohon perentang di , pohon perentang yang berbobot minimum dinamakan Pohon merentang minimum memiliki terapan luas dalam praktek. Bobot = 10 + 25 + 15 + 20 + 35 = 105 4 (2, 6) 25 1 2 3 4 5 5 (1, 4) 30 ditolak 6 (3, 5) 35 1 2 3 6 4 5 1 2 3 4 5 6 10 45 20 15 35 55 25 Bobotnya sama yaitu = 36</p>
+<p><img loading="lazy" width="100%" src="https://bukubelajar.github.io/img/placeholder.svg" data-src="https://static.fdokumen.com/img/1200x630/reader020/image/20191003/5a7beefe7f8b9a66798c6ae5.png?t=1631174184" alt="Graf untuk soal nomor 1 untuk soal nomor 1 Graf untuk" title="Graf untuk soal nomor 1 untuk soal nomor 1 Graf untuk" onerror="this.onerror=null;this.src='https:\/\/bukubelajar.github.io\/img\/placeholder.svg';" class="center" />
+Source: fdokumen.com</p>
+<p>Pohon merentang minimum (minimum spanning tree) | algoritma kruskal. Dalam jaringan distribusi listrik, pohon rentang minimum (mst) digunakan untuk menemukan panjang minimal kabel untuk sistem jaringan listrik menjadi lebih optimal. Pembentukkan pohon merentang minimum dari dua algoritma yang berbeda tersebut. Pohon merentang minimum (minimum spanning tree) | algoritma kruskal. Bobot = 10 + 25 + 15 + 20 + 35 = 105 19.</p>
+<p><img loading="lazy" width="100%" src="https://bukubelajar.github.io/img/placeholder.svg" data-src="https://i.ytimg.com/vi/4OlfuwkRcqk/maxresdefault.jpg" alt="Pohon Merentang Minimum (Minimum Spanning Tree" title="Pohon Merentang Minimum (Minimum Spanning Tree" onerror="this.onerror=null;this.src='https:\/\/bukubelajar.github.io\/img\/placeholder.svg';" class="center" />
+Source: youtube.com</p>
+<p>Tambahkan sisi tersebut ke dalam pohon. Pohon merentang minimum (minimum spanning tree) | algoritma kruskal. Realisasi algoritma prim 10 12 9 a d b c. Algoritma prim mengeksplorasi banyak pilihan pada tiap langkah dan akan selalu menghasilkan pohon merentang minimum. Salah satu algoritma yang dipakai dalam membangun pohon merentang minimum adalah algoritma prim yang merupakan algoritma dengan menggunakan strategi greedy sehingga membentuk solusi pada tiap langkahnya.</p>
+<p><img loading="lazy" width="100%" src="https://bukubelajar.github.io/img/placeholder.svg" data-src="https://image2.slideserve.com/3772586/aplikasi-pohon-merentang-l.jpg" alt="PPT POHON PowerPoint Presentation, free download ID" title="PPT POHON PowerPoint Presentation, free download ID" onerror="this.onerror=null;this.src='https:\/\/bukubelajar.github.io\/img\/placeholder.svg';" class="center" />
+Source: slideserve.com</p>
+<p>Pilih sisi yang mempunyai bobot minimum yang tidak membentuk sirkuit di pohon. Graph theory is a branch of mathematics and a main topic which has many applications at the moments. Pada setiap langkah diambil sisi dari graf g yang mempunyai bobot minimum namun terhubung dengan pohon merentang minimum t yang telah terbentuk. Membangun pohon merentang minimum dengan menggunakan algoritma prim susiani, erna (2009) membangun pohon merentang minimum dengan menggunakan algoritma prim. Graph is one equipment applied for finding for solution from problems of discrete met in the.</p>
+<p><img loading="lazy" width="100%" src="https://bukubelajar.github.io/img/placeholder.svg" data-src="https://image2.slideserve.com/4179157/lanjutan-tabel-l.jpg" alt="PPT POHON (TREE) PowerPoint Presentation, free download" title="PPT POHON (TREE) PowerPoint Presentation, free download" onerror="this.onerror=null;this.src='https:\/\/bukubelajar.github.io\/img\/placeholder.svg';" class="center" />
+Source: slideserve.com</p>
+<p>Diantara semua pohon perentang di , pohon perentang yang berbobot minimum dinamakan Other thesis, university of muhammadiyah malang. Pembentukkan pohon merentang minimum dari dua algoritma yang berbeda tersebut. Pohon rentang minimum t = (v, e’) } deklarasi i, p, q, u, v : Tujuan penulisan mengimplementasikan dan memvisualisasikan permasalahan minimum spanning tree dengan algoritma kruskal ke dalam sofware dengan menggunakan bahasa pemrograman visual basic.net e.</p>
+<p><img loading="lazy" width="100%" src="https://bukubelajar.github.io/img/placeholder.svg" data-src="https://1.bp.blogspot.com/-82Re0IJQszM/Uqfc9hrlAWI/AAAAAAAAAYc/uY54FTr9RTE/w1200-h630-p-k-no-nu/kruscalsoal.png" alt="Contoh Soal Dan Jawaban Pohon Merentang Minimum Menjawab" title="Contoh Soal Dan Jawaban Pohon Merentang Minimum Menjawab" onerror="this.onerror=null;this.src='https:\/\/bukubelajar.github.io\/img\/placeholder.svg';" class="center" />
+Source: menjawabsoalku.blogspot.com</p>
+<p>Ambil sisi graf g yang berbobot minimum, masukkan ke dalam t. Pembahasan mengenai pohon merentang minimum ini masih dapat dilanjutkan untuk penelitian pohon merentang minimum pada jenis graf yang lain. Diantara semua pohon perentang di , pohon perentang yang berbobot minimum dinamakan Merupakan pohon merentang dengan bobot minimum. Matematika diskrit 18 pohon merentang minimum yang dihasilkan:</p>
+<p><img loading="lazy" width="100%" src="https://bukubelajar.github.io/img/placeholder.svg" data-src="https://ohtheme.com/oh/theme/main/2913938191/dWdnY2Y6Ly92em50ci5meXZxcmZ1bmVycHFhLnBiei8xMGNidWJhLTA0LTE0MDczMDA5MzUyNS1jdWNuY2MwMi85NS96bmdyem5ndnhuLXF2ZnhldmctMTAtY2J1YmEtMDQtMTctNjM4LndjdA==/contoh-soal-dan-jawaban-matematika-diskrit-pohon-jawaban.jpg" alt="Contoh Soal Dan Jawaban Pohon Merentang Minimum OhTheme" title="Contoh Soal Dan Jawaban Pohon Merentang Minimum OhTheme" onerror="this.onerror=null;this.src='https:\/\/bukubelajar.github.io\/img\/placeholder.svg';" class="center" />
+Source: ohtheme.com</p>
+<p>Ini terjadi jika ada beberapa sisi yang akan dipilih berbobot sama. Pohon merentang minimum (minimum spanning tree) jika adalah graf berbobot, maka bobot perentang 𝑇 dari didefenisikan dengan jumlah bobot semua sisi di 𝑇. Graph is one equipment applied for finding for solution from problems of discrete met in the. Pohon rentang minimum t = (v, e’) } deklarasi i, p, q, u, v : Masalah pohon rentang minimum serupa dengan masalah rute terpendek (shortest route), kecuali bahwa tujuannya adalah untuk menghubungkan seluruh.</p>
+<p><img loading="lazy" width="100%" src="https://bukubelajar.github.io/img/placeholder.svg" data-src="https://image2.slideserve.com/4179157/tabel-pembentukan-pohon-merentang-minimum-dengan-menggunakan-algoritma-prim-l.jpg" alt="PPT POHON (TREE) PowerPoint Presentation, free download" title="PPT POHON (TREE) PowerPoint Presentation, free download" onerror="this.onerror=null;this.src='https:\/\/bukubelajar.github.io\/img\/placeholder.svg';" class="center" />
+Source: slideserve.com</p>
+<p>Pohon merentang minimum memiliki terapan luas dalam praktek. Pohon merentang minimum (minimum spanning tree) jika adalah graf berbobot, maka bobot perentang 𝑇 dari didefenisikan dengan jumlah bobot semua sisi di 𝑇. Contohnya, menentukan jarak minimum jaringan listrik, menentukan biaya pembangunan jalan raya yang Langkah sisi bobot pohon rentang. Himpunan v disebut himpunan simpul (titik) dari graf g, ditulis v(g).himpunan e disebut himpunan rusuk (sisi atau garis) dari graf g yang.</p>
+<p><img loading="lazy" width="100%" src="https://bukubelajar.github.io/img/placeholder.svg" data-src="https://i.ytimg.com/vi/rCO7ciMuYk8/maxresdefault.jpg" alt="Masalah Jaringan Pohon Merentang Minimum (Minimum" title="Masalah Jaringan Pohon Merentang Minimum (Minimum" onerror="this.onerror=null;this.src='https:\/\/bukubelajar.github.io\/img\/placeholder.svg';" class="center" />
+Source: youtube.com</p>
+<p>Penentuan pohon rentang minimum yang banyak digunakan untuk memecahkan masalah optimasi untuk menemukan solusi terhadap masalah yang memerlukan minmum. Bobot = 10 + 25 + 15 + 20 + 35 = 105 • pohon merentang yang dihasilkan tidak selalu unik meskipun bobotnya tetap sama. Masukkan (u, v) ke dalam t. Pohon rentang yang berbobot minimum dinamakan pohon merentang minimum minimum spanning tree. Diantara semua pohon perentang di , pohon perentang yang berbobot minimum dinamakan</p>
+<p><img loading="lazy" width="100%" src="https://bukubelajar.github.io/img/placeholder.svg" data-src="https://cuitandokter.com/dir/main/943847459/dWdnY2Y6Ly9lcm5xcmUwMTYuc3FieGh6cmEucGJ6L2VybnFyZTAxNi9meXZxci8yMDE4MDgyNi81ODcwNTUxNTFuMjhub24yMTE4bzUxczMvcWJwaHpyYWctMjcuY2F0/pohon-tree-matematika-diskrit-pptx-powerpoint.jpg" alt="Matematika Diskrit Pohon Merentang Minimum Cuitan Dokter" title="Matematika Diskrit Pohon Merentang Minimum Cuitan Dokter" onerror="this.onerror=null;this.src='https:\/\/bukubelajar.github.io\/img\/placeholder.svg';" class="center" />
+Source: cuitandokter.com</p>
+<p>Pembentukkan pohon merentang minimum dari dua algoritma yang berbeda tersebut. Berdasarkan gambar di atas, maka dilakukan pengurutan sisi pada graf mulai dari sisi dengan bobot terkecil sampai terbesar dapat dilihat pada tabel berikut: Langkah sisi bobot pohon rentang. Adapun, pohon merentang minimum merupakan pohon merentang yang memiliki jumlah bobot tiap sisi minimum dibandingkan pohon merentang lain. Ambil sisi dari graf g yang berbobot minimum, masukkan ke dalam t</p>
+<p><img loading="lazy" width="100%" src="https://bukubelajar.github.io/img/placeholder.svg" data-src="https://image2.slideserve.com/4179157/pohon-merentang-minimum-l.jpg" alt="PPT POHON (TREE) PowerPoint Presentation, free download" title="PPT POHON (TREE) PowerPoint Presentation, free download" onerror="this.onerror=null;this.src='https:\/\/bukubelajar.github.io\/img\/placeholder.svg';" class="center" />
+Source: slideserve.com</p>
+<p>Berdasarkan gambar di atas, maka dilakukan pengurutan sisi pada graf mulai dari sisi dengan bobot terkecil sampai terbesar dapat dilihat pada tabel berikut: Tujuan penulisan mengimplementasikan dan memvisualisasikan permasalahan minimum spanning tree dengan algoritma kruskal ke dalam sofware dengan menggunakan bahasa pemrograman visual basic.net e. Graph is one equipment applied for finding for solution from problems of discrete met in the. Pada setiap langkah diambil sisi dari graf g yang mempunyai bobot minimum namun terhubung dengan pohon merentang minimum t yang telah terbentuk. Berdasarkan gambar di atas, maka dilakukan pengurutan sisi pada graf mulai dari sisi dengan bobot terkecil sampai terbesar dapat dilihat pada tabel berikut:</p>
+<p><img loading="lazy" width="100%" src="https://bukubelajar.github.io/img/placeholder.svg" data-src="https://reader016.fdokumen.com/reader016/slide/20180826/587055151a28aba2118b51f3/document-6.png?t=1595131735" alt="Pohon(tree) matematika diskrit [PPTX Powerpoint]" title="Pohon(tree) matematika diskrit [PPTX Powerpoint]" onerror="this.onerror=null;this.src='https:\/\/bukubelajar.github.io\/img\/placeholder.svg';" class="center" />
+Source: fdokumen.com</p>
+<p>Pembentukkan pohon merentang minimum dari dua algoritma yang berbeda tersebut. Pohon merentang minimum ini merupakan pohon merentang yang paling penting. Pohon merentang minimum yang dihasilkan: Pohon rentang minimum (minimal spanning tree) adalah teknik mencari jalan penghubung yang dapat menghubungkan semua titik dalam jaringan secara bersamaan sampai diperoleh jarak minimum. Visualgo is an ongoing project and more complex visualizations are still being developed.</p>
+<p><img loading="lazy" width="100%" src="https://bukubelajar.github.io/img/placeholder.svg" data-src="https://data03.123dok.com/thumb/tabel-pembentukan-pohon-merentang-minimum-dengan-algoritma-kruskal-4yr1n8qo.qOtMrc3wSX5FNXhyzFQ.jpeg" alt="Menentukan Minimum Spannning Tree Menggunakan Algoritma" title="Menentukan Minimum Spannning Tree Menggunakan Algoritma" onerror="this.onerror=null;this.src='https:\/\/bukubelajar.github.io\/img\/placeholder.svg';" class="center" />
+Source: id.123dok.com</p>
+<p>Aplikasi pohon merentang minimum dapat diterapkan di berbagai aspek kehidupan. Contohnya, menentukan jarak minimum jaringan listrik, menentukan biaya pembangunan jalan raya yang Pohon rentang minimum (minimal spanning tree) adalah teknik mencari jalan penghubung yang dapat menghubungkan semua titik dalam jaringan secara bersamaan sampai diperoleh jarak minimum. Tabel pembentukan pohon merentang minimum dengan menggunakan algoritma prim bobot pohon merentang minimum yang diperoleh dengan menggunakan algoritma prim: Pohon rentang minimum t = (v, e’) } deklarasi i, p, q, u, v :</p>
+<p><img loading="lazy" width="100%" src="https://bukubelajar.github.io/img/placeholder.svg" data-src="https://image.slidesharecdn.com/grafpohonbagianke6-131005095330-phpapp01/95/graf-pohon-bagian-ke-6-49-638.jpg?cb=1380966898" alt="Contoh Soal Dan Jawaban Pohon Merentang Minimum" title="Contoh Soal Dan Jawaban Pohon Merentang Minimum" onerror="this.onerror=null;this.src='https:\/\/bukubelajar.github.io\/img\/placeholder.svg';" class="center" />
+Source: ilmusosial.id</p>
+<p>Pohon rentang minimum t = (v, e’) } deklarasi i, p, q, u, v : Graph theory is a branch of mathematics and a main topic which has many applications at the moments. Membangun pohon merentang minimum dengan menggunakan algoritma prim susiani, erna (2009) membangun pohon merentang minimum dengan menggunakan algoritma prim. Pohon merentang minimun jika g pada merupakan graf berbobot, maka bobot pohon merentang t1 atau t2 didefinisikan sebagai jumlah bobot semua sisi di t1atau t2. Salah satu pembahasannya yaitu pohon merentang minimum (minimum spanning tree).</p>
+<p>This site is an open community for users to do sharing their favorite wallpapers on the internet, all images or pictures in this website are for personal wallpaper use only, it is stricly prohibited to use this wallpaper for commercial purposes, if you are the author and find this image is shared without your permission, please kindly raise a DMCA report to Us.</p>
+<p>If you find this site beneficial, please support us by sharing this posts to your own social media accounts like Facebook, Instagram and so on or you can also save this blog page with the title pohon merentang minimum by using Ctrl + D for devices a laptop with a Windows operating system or Command + D for laptops with an Apple operating system. If you use a smartphone, you can also use the drawer menu of the browser you are using. Whether it&rsquo;s a Windows, Mac, iOS or Android operating system, you will still be able to bookmark this website.</p>
+</article>
+            <div class="row"><div class="posts-image" style="width:50%;"><a style="margin:5px;" href="/contoh-spanduk-selamat-bertanding/">&laquo;&laquo;&nbsp;Contoh Spanduk Selamat Bertanding</a></div>
+    <div class="posts-image" style="width:50%"><a style="margin:5px;" href="/contoh-soal-manajemen-kas/">Contoh Soal Manajemen Kas&nbsp;&raquo;&raquo;</a></div></div>
+            
+            <div class="mb-4">
+                <span class="taglist"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+<div class="container pt-4 pb-4">
+    
+    <h5 class="font-weight-bold spanborder"><span>Read next</span></h5>
+    <div class="row">
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/desain-rumah-islami-cantik-dan-sesuai-syariah/"><img height="80" src="/img/placeholder.svg" data-src="https://deagamdesign.com/wp-content/uploads/2019/10/38-Macam-Desain-Rumah-Islami-Cantik-Sesuai-Syariah-Terbaru-dan-Terbaik-768x1086.jpg" onerror="this.onerror=null;this.src='https:\/\/bukubelajar.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/desain-rumah-islami-cantik-dan-sesuai-syariah/">Desain Rumah Islami Cantik Dan Sesuai Syariah</a>
+                        </h2>
+                        <small class="text-muted">Dec 29 . 11 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/biaya-s3-ugm/"><img height="80" src="/img/placeholder.svg" data-src="https://lh6.googleusercontent.com/proxy/02IIXV_6eGxHtpF0__9booS31fEx3lOKXCNT8VBB5vQ61vBSsnZq0z_GrczXgjjiyKyzGYPiq1DDVtuKy8xrU6vkblFPNqwwczh8T7HZzfgoHJNwQ1vwIm10FYV6DpTEvKuXF7wXORlq=w1200-h630-p-k-no-nu" onerror="this.onerror=null;this.src='https:\/\/bukubelajar.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/biaya-s3-ugm/">Biaya S3 Ugm</a>
+                        </h2>
+                        <small class="text-muted">Feb 05 . 8 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/contoh-cerita-present-continuous-tense/"><img height="80" src="/img/placeholder.svg" data-src="https://1.bp.blogspot.com/-VkNkbiplDK4/X6jziAbHfhI/AAAAAAAAA4o/X319u8IppekwU1B8uLrqOu7vTcFW2dYMgCLcBGAsYHQ/s2048/contoh-paragraf-future-perfect-continuous-tense.jpg" onerror="this.onerror=null;this.src='https:\/\/bukubelajar.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/contoh-cerita-present-continuous-tense/">Contoh Cerita Present Continuous Tense</a>
+                        </h2>
+                        <small class="text-muted">Oct 02 . 7 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/novel-fredy-s-pdf/"><img height="80" src="/img/placeholder.svg" data-src="https://ecs7.tokopedia.net/img/cache/700/product-1/2020/6/4/1013921/1013921_0fbf9858-a428-4950-967f-24d47599a6c4_1728_1728.jpg" onerror="this.onerror=null;this.src='https:\/\/bukubelajar.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/novel-fredy-s-pdf/">Novel Fredy S Pdf</a>
+                        </h2>
+                        <small class="text-muted">Sep 16 . 8 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/biodata-om-hao-agama/"><img height="80" src="/img/placeholder.svg" data-src="https://nestia-food.obs.ap-southeast-3.myhuaweicloud.com/201912/17/dee5ce54eca837de50a9518a481084dd.gif" onerror="this.onerror=null;this.src='https:\/\/bukubelajar.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/biodata-om-hao-agama/">Biodata Om Hao Agama</a>
+                        </h2>
+                        <small class="text-muted">Jul 27 . 8 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/motto-calon-ketua-rw/"><img height="80" src="/img/placeholder.svg" data-src="https://1.bp.blogspot.com/-U-iqMDJiNyE/YK42DhnDWrI/AAAAAAAAB3Q/JJgcmXunHaIDSiSHoyJqS-8d6ImdigqWwCLcBGAsYHQ/w1200-h630-p-k-no-nu/DSCF6450A.jpg" onerror="this.onerror=null;this.src='https:\/\/bukubelajar.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/motto-calon-ketua-rw/">Motto Calon Ketua Rw</a>
+                        </h2>
+                        <small class="text-muted">Oct 12 . 8 min read</small>
+                    </div>
+                </div>
+        </div>
+</div>
+</div>
+</div>
+    </main>    <script async="async" src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script async="async" src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script async="async" src="https://bukubelajar.github.io/assets/js/theme.js"></script>
+    <script>function init(){var imgDefer=document.getElementsByTagName('img');for (var i=0; i<imgDefer.length; i++){if(imgDefer[i].getAttribute('data-src')){imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));}}}window.onload=init;</script>
+    
+    <footer class="bg-white border-top p-3 text-muted small">
+        <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div><span style="text-transform: capitalize;"><a href="https://bukubelajar.github.io">Buku Belajar</a> Copyright &copy; 2022.</span></div>
+            
+        </div>
+        </div>
+    </footer>
+  </body>
+</html>
